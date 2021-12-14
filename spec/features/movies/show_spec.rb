@@ -12,18 +12,18 @@ RSpec.describe 'Movies show page', type: :feature do
     Actor.create!(name: 'Sunny', age: 32)
   end
 
-  # it 'shows movie attributes' do
-  #   visit "/movies/#{@movie1.id}"
-  #
-  #   expect(page).to have_content('Raiders of the Lost Ark')
-  #   expect(page).to have_content('1981')
-  #   expect(page).to have_content('Action/Adventure')
-  #   expect(page).to have_content('30.5')
-  #   expect('Bob').to appear_before('Russell')
-  # end
+  it 'shows movie attributes' do
+    visit "/movies/#{@movie1.id}"
+
+    expect(page).to have_content('Raiders of the Lost Ark')
+    expect(page).to have_content('1981')
+    expect(page).to have_content('Action/Adventure')
+    expect(page).to have_content('30.5')
+    expect('Bob').to appear_before('Russell')
+  end
 
   it "adds actor to movie" do
-    binding.pry
+    # binding.pry
     # save_and_open_page
     visit "/movies/#{@movie1.id}"
 
