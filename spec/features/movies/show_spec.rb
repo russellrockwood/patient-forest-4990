@@ -7,9 +7,9 @@ RSpec.describe 'Movies show page', type: :feature do
     @movie1 = Movie.create!(title: 'Raiders of the Lost Ark', creation_year: 1981, genre: 'Action/Adventure', studio_id: @universal.id)
     @movie2 = Movie.create!(title: 'Shrek', creation_year: 2001, genre: 'Comedy', studio_id: @universal.id)
 
-    @movie1.actors.create!(name: 'Russell', age: 31)
-    @movie1.actors.create!(name: 'Bob', age: 30)
-    Actor.create!(name: 'Sunny', age: 32)
+    # @movie1.actors.new(name: 'Russell', age: 31)
+    # @movie1.actor.new(name: 'Bob', age: 30)
+    # Actor.create!(name: 'Sunny', age: 32)
   end
 
   it 'shows movie attributes' do

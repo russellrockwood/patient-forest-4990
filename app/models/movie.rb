@@ -4,6 +4,7 @@ class Movie < ApplicationRecord
   has_many :actors, through: :movie_actors
 
   def names_by_age
+    binding.pry
     actors.select(:name).order(:age)
   end
 
