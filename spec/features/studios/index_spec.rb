@@ -15,29 +15,4 @@ RSpec.describe 'Studios index page', type: :feature do
     expect(page).to have_content('Raiders of the Lost Ark',)
     expect(page).to have_content('Shrek')
   end
-
-  # it 'has link to hostels index' do
-  #   visit '/cities'
-  #
-  #   expect(page).to have_link('Hostels', :href=>'/hostels')
-  # end
-  #
-  # it 'has link to add new city' do
-  #   visit '/cities'
-  #
-  #   expect(page).to have_link('New City', :href=>'/cities/new')
-  # end
-  #
-  # it 'has link to update city' do
-  #   visit '/cities'
-  #
-  #   expect(page).to have_link('Update', :href=>"/cities/#{@city1.id}/edit")
-  # end
-  #
-  # it 'deletes city' do
-  #   visit '/cities'
-  #   click_button("delete", :match => :first)
-  #
-  #   expect(page).to have_no_content('Cityborro')
-  # end
 end
